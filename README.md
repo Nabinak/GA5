@@ -31,24 +31,23 @@ mkdir -p scripts data/ref results
 
 ### 4: Initialize a Git repository, and commit your first files
 
-<!-- No answer needed here -- we check the repo directly. -->
 
 ### 5: Download the reference transcriptome
 
-<!-- Put the download command in `protocol.md`, not here. -->
 
 Code to count the number of transcripts:
 
 ```bash
-# Your command:
+ls -lh data/ref/GCF_016801865.2_TS_CPP_V2_rna.fna.gz 
 ```
 
 The output of the command was:
 
 ```
+-rw-rw----+ 1 nabinak77 PAS3493 19M Dec 22  2022 data/ref/GCF_016801865.2_TS_CPP_V2_rna.fna.gz
 ```
 
-*Answer*: The number of transcripts in the file:
+*Answer*: The number of transcripts in the file: 19M
 
 ------------------------------------------------------------------------
 
@@ -56,10 +55,9 @@ The output of the command was:
 
 ### 6: Run TrimGalore
 
-<!-- Put the code to run TrimGalore in `protocol.md`, not here. -->
 
 *Answer*: Whether all batch jobs succeeded, and how you checked that
-(and any problems you encountered, and how you solved them):
+(and any problems you encountered, and how you solved them): I had a issue with running the batch job because I did not define the input file path correctly and also I also had started a new terminal. Claude was helpful in suggesting if I am not in the right working dir, then I realized may be I it could be because started new terminal. So I run input path and loop together in the new terminal which fixed the issue. 
 
 ------------------------------------------------------------------------
 
