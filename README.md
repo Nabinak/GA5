@@ -188,9 +188,17 @@ I asked about the salmon fragment length distribution. It got more clear about t
 *Answer*: At least three of Claude's suggestions,
 and whether you agree or disagree with each one, and why:
 
+The first suggestion was to correct about arguments multiqc take as I initially has written that multiqc takes one argument but rather it takes two argument so I corrected that as I agree with it. 
+
+The second suggestion Claude gave was No instruction to verify jobs finished before moving to the next step. Steps 1→2→3→4 are sequential dependencies (salmon_quant needs trimmed reads; multiqc needs everything), but nothing in the protocol says "wait for all N trimgalore jobs to finish and check logs before running Step 2/3." The "check logs after jobs finish" note is generic and placed once at the top, not reinforced per step. I do not necessarily agree with this because when we are write the protocol it is not like the script which we run together. This is simply one step at a time so I feel such instruction can be added but not necessarily important or requirement to add. 
+
+The third suggestion is Give TrimGalore its own output subdir (results/trimgalore/) instead of dumping into bare results/, consistent with salmon_index/salmon_quant/multiqc each having their own subdir. Then update the Step 3 glob to read from that subdir. This is the single highest-value fix — it turns a 400+ file flat mess into a navigable structure. I think this could be good suggestion as I have sub dir for other program I ran but not for the trimgalore. 
+
 ### 18: Address a suggestion
 
 *Answer*: Which suggestion(s) you addressed, and what you changed:
+
+I made the changes about multiqc on the protocol. 
 
 ------------------------------------------------------------------------
 
