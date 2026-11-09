@@ -162,21 +162,22 @@ results/salmon_quant/S86/logs/salmon_quant.log:mapping rate: 83.0532%
 ### 13: Run MultiQC
 
 *Answer*: For each program, the number of reports that MultiQC found,
-and why it found this number:
+and why it found this number: It found 22 reports with salmon and 44 reports with Fastqc and Trimgalore. This is because Trimgalore and Fastqc process individual forward (R1) and reverse (R2) reads but Salmon process a forward and reverse reads as a pair. 
 
 ### 14: The General Statistics table
 
 *Answer*: The sample with the lowest Salmon mapping rate,
-and whether this matches your answer to question 11:
+and whether this matches your answer to question 11: S83 has lowest salmon mapping rate and it matches my answer with question 11.
 
 ### 15: Adapter lengths
 
 *Answer*: The most common adapter lengths, whether this surprised you,
-and why you think these lengths are the most common:
+and why you think these lengths are the most common: The most common adapter lengths seems to be 1 and 3 bp. I think this is not very surprising because trimgalore has that autodetection of may be 13 bp so this trimming can be considered normal. 
 
 ### 16: Ask Claude about the MultiQC report
 
 *Answer*: What you asked, and what you learned from Claude's answer (in your own words):
+I asked about the salmon fragment length distribution. It got more clear about this program map both reads to the transcriptome to measure the common size of cDNA fragments generated for the library preparation. I wanted make sure on what peaks suggested on the graph and learned it is the most common fragment length in the library and most of them having the same peak suggests that samples were prepared very consistently and this is a very good thing. 
 
 ------------------------------------------------------------------------
 
