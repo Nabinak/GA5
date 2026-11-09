@@ -76,4 +76,8 @@ done
 
 ## Step 4: Summarizing the results of all steps with MultiQC
 
-<???>
+`multiqc.sh` runs multiqc. It takes 1 argument: input dir. 
+
+```bash
+sbatch scripts/multiqc.sh results results/multiqc
+```
