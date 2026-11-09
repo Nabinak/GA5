@@ -58,11 +58,21 @@ done
 
 ## Step 2: Creating a transcriptome index with Salmon
 
-<???>
+`salmon_index.sh` creates a Salmon index of the reference Transcriptome FASTA file. It takes 2 arguments: the transcriptome FASTA file and the output dir. 
+
+```bash
+sbatch scripts/salmon_index.sh "$ref_transcripts" "$outdir"/salmon_index
+```
 
 ## Step 3: Pseudo-alignment and quantification with Salmon
 
-<???>
+```bash
+for fastq_r1 in "$outdir"/*_R1.fastq.gz; do
+    fastq_r2=${fastq_r1/_R1/_R2}
+    sbatch scripts/salmon_quant.sh "$fastq_r1" "$fastq_r2" "$outdir"/salmon_index "$outdir"/salmon_quant
+done
+```
+
 
 ## Step 4: Summarizing the results of all steps with MultiQC
 
