@@ -5,7 +5,7 @@
 - Date last modified: 2026-11-08
 - This was run at the pitzer cluster of the Ohio Supercomputer Center (<https://www.osc.edu>)
 - OSC working dir: GA5
-- GitHub repository: <???>
+- GitHub repository: https://github.com/Nabinak/GA5
 
 ## Prerequisites
 
