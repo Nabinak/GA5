@@ -1,4 +1,4 @@
-![alt text](image-3.png)
+[![DOI](https://sandbox.zenodo.org/badge/1450944700.svg)](https://handle.test.datacite.org/10.5072/zenodo.637584)
 
 # GA5 answers - Nabina Karki
 
